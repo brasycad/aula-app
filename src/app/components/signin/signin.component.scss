@@ -1,0 +1,30 @@
+.wrapper {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+.form-wrapper {
+  display: grid;
+  width: auto;
+  grid-gap: 12px;
+  background-color: grey;
+  padding: 24px;
+}
+input {
+  width: 100px;
+  border: 0;
+  background: white;
+  border-radius: 4px;
+  padding: 0 12px;
+  height: 24px;
+}
+.warning {
+  color: orange;
+  width: 140px;
+}
+input.error {
+  border: 1px solid red;
+}

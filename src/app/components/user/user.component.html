@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <!-- <h4 *ngIf='user'>Mi usuario favorito es: {{user?.last_name}} {{user?.first_name}}</h4>
+  <h4 *ngIf='!user'>El usuario no existe!!</h4> -->
+  <div class='data'>
+    <h2 class='welcome'>{{'hl'| translate}}</h2>
+    <h4 class='title'>El valor del titulo '{{data?.title}}' es </h4>
+    <h1 class='value'>{{data?.value*1000 |myPipe }}</h1>
+  </div>
+</div>

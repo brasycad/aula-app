@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "aula-app"
+    }
+  },
+  "defaultProject": "aula-app",
+  "cli": {
+    "analytics": false
+  }
 }
