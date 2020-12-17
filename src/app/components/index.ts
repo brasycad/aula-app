@@ -1,4 +1,5 @@
-export * from './menu/menu.component'
+export * from './users/users.component'
 export * from './signin/signin.component'
 export * from './logout/logout.component'
 export * from './user/user.component'
+export * from './ui/watch/watch'

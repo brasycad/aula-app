@@ -1,8 +1,9 @@
-<div class='wrapper' [ngStyle]="{background:color}">
+<div class='wrapper my-header' [ngStyle]="{background:color}" *ngIf='dataForm'>
   <form class='form-wrapper' [formGroup]="dataForm" (submit)='save()'>
     <input type='email' formControlName='email' [ngClass]="{error:emailError}" />
     <input type='password' formControlName='password' />
     <button type='submit' class='btn' [disabled]='!dataForm.valid'>Entrar</button>
   </form>
-  <p class='warning' *ngIf='paswordError'>Longitud del password menor de 6 caracteres</p>
+  <p class='warning' *ngIf='!dataForm.valid && paswordError && isPristinePasswd'>Longitud del password menor de 6
+    caracteres</p>
 </div>

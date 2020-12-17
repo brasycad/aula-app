@@ -1,10 +1,12 @@
 export interface IUser {
   id: number;
-  first_name: string;
-  last_name: string;
+  name: string
   email: string;
-  gender: string;
-  ip_address: string;
+  address: IAdress
+  company: ICompany
+  phone
+  username
+  website
 }
 export interface IData {
   id: number
@@ -13,6 +15,24 @@ export interface IData {
   completed: boolean
   value?: number
 }
-
-
-
+export interface IAdress {
+  city
+  geo
+  street
+  suite
+  zipcode
+}
+export interface ICompany {
+  bs
+  catchPhase
+  name
+}
+export interface IAppState {
+  user: IUser
+  countries
+  email: string
+}
+export interface IReduxAction {
+  payLoad: any
+  type: string
+}

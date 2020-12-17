@@ -1,5 +1,7 @@
 <div class="app-wrapper">
-  <header>
+  <header class='my-header'>
+    <h5>{{user?.name}}</h5>
+    <watch></watch>
     <div class="menu">
       <div class="item" *ngFor='let item of menu' (click)='onMenu(item)'>
         <p>{{item}}</p>
@@ -10,6 +12,6 @@
     <router-outlet></router-outlet>
   </section>
   <footer>
-    <h4>Aula de aprendizaje de Angular 11</h4>
+    <h4>Aula de aprendizaje de Angular 11 | ver {{version}}</h4>
   </footer>
 </div>

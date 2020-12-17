@@ -1,0 +1,6 @@
+export enum STORE {
+  STORE_USER,
+  STORE_COUNTRIES,
+  STORE_EMAIL
+
+}

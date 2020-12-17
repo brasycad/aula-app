@@ -1,0 +1,9 @@
+<div class="list">
+
+  <div class='user-row' *ngFor="let user of users" (click)='showUser(user)'>
+    <h1 class='id'>{{user.id}}</h1>
+    <h4 class="name">{{user.name}}</h4>
+    <h5 class="email">{{user.email}}</h5>
+  </div>
+
+</div>

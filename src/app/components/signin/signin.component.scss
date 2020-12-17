@@ -10,19 +10,19 @@
   display: grid;
   width: auto;
   grid-gap: 12px;
-  background-color: grey;
+  background-color: rgb(255, 255, 255);
   padding: 24px;
 }
 input {
-  width: 100px;
+  width: 150px;
   border: 0;
-  background: white;
+  background: rgb(209, 209, 209);
   border-radius: 4px;
   padding: 0 12px;
   height: 24px;
 }
 .warning {
-  color: orange;
+  color: red;
   width: 140px;
 }
 input.error {
